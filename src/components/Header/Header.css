@@ -1,0 +1,84 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 41, 40);
+    color: rgb(221, 221, 1);
+  }
+  h4{
+    font-weight: 400;
+  
+  
+  }
+  .link{
+    text-decoration: none;
+    color: rgb(221, 221, 1);
+  }
+  #logo-index{
+    color: rgb(247, 247, 51);
+    text-align: center;
+    font-size: 2pc;
+  
+  }
+  ul{
+    list-style: none;
+  }
+  #calendar{
+    width: 28pc;
+  
+  }
+  .Container{
+    display: flex;
+    justify-content: space-around;
+  }
+  #dir{
+    width: 27pc;
+  }
+  .dir{
+    text-align: center;
+  }
+  .sobre-container{
+    text-align: center;
+  }
+  .link-header {
+    display: flex;
+    gap: 23px;
+    color: rgb(247, 247, 51);
+    position: relative;
+    top: 2pc;
+    right: 2pc;
+    background-color: rgb(41, 41, 40);
+    height: 2pc;
+  
+  }
+  
+  .link-header div {
+    margin-right: 4pc; 
+  }
+  .link-header a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(247, 247, 51); /* Set desired color */
+  }
+  @media screen and (max-width: 600px) {
+    .header{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: rgb(41, 41, 40);
+      color: rgb(221, 221, 1);
+    }
+    .link-header {
+      display: flex;
+      gap: 23px;
+      color: rgb(247, 247, 51);
+      position: relative;
+      top: 2pc;
+    right: 0pc;
+    width: 100%;
+      background-color: rgb(41, 41, 40);
+      height: 2pc;
+    
+    }
+  }

@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+  }
+  
+  .container h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .container h1 span {
+    padding: 0 0.2em;
+  }
+  
+  #spann {
+    background-color: rgb(41, 41, 40);
+    color: rgb(221, 221, 1);
+  }
+  
+  #p {
+    color: gray;
+  }
+  
+  button {
+    background-color: rgb(41, 41, 40);
+    color: rgb(221, 221, 1);
+    border: none;
+    height: 2pc;
+    width: 7pc;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 2em; /* Adjust padding for smaller screens */
+    }
+  
+    button {
+      width: 100%; /* Make the button full-width on smaller screens */
+    }
+  }
+  

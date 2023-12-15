@@ -1,0 +1,20 @@
+.footer{
+  color: rgb(221, 221, 1);
+  background-color: rgb(41, 41, 40);
+  padding: 3em;
+
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes li{
+    margin: 0 1em;
+    
+}
+.redes li:hover{
+  color: white;
+
+}
+p{text-align: center;
+}

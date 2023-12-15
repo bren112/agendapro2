@@ -1,0 +1,47 @@
+/* Base styling for the table */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Center the heading */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Center the table */
+  .tabelaclientes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  
+    th, td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    th, td {
+      text-align: center;
+    }
+  
+    /* Optional: Add more styling as needed for smaller screens */
+  }
+  

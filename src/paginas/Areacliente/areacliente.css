@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .calendario {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 2pc;
+  }
+  
+  .dia-semana {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .janela-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .pagina-app {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-around;
+  }
+  
+  /* Responsive styling for .calendario */
+  @media screen and (max-width: 600px) {
+    .calendario {
+      align-items: center; /* Center items on smaller screens */
+      left: 0; /* Adjust the position */
+    }
+  }
+  
+  /* Responsive styling for .modal-conteudo */
+  @media screen and (max-width: 600px) {
+    .modal-conteudo {
+      width: 80%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  .lista-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 33pc;
+    gap: 3px;
+  }
+  
+  .horario-item {
+    flex: 0 0 calc(33.333% - 3px); /* Calcula 33% da largura com uma pequena folga entre os itens */
+    margin: 0;
+  }
+  
+.lista-horarios button{
+  background-color: rgb(41, 41, 40);
+  color: rgb(221, 221, 1);
+  height: 2pc;
+  width: 7pc;
+  border: solid 0.5px;
+  border-radius: 1pc;
+}
+#btnn{
+  background-color: rgb(41, 41, 40);
+  color: rgb(221, 221, 1);
+  height: 2pc;
+  width: 7pc;
+  border: none;
+  border-radius: 0.5pc;
+
+}
+.horario-item:disabled {
+  background-color: #ddd; /* Altere para a cor desejada */
+  color: #555; /* Altere para a cor desejada */
+}
